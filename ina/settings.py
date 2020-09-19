@@ -25,7 +25,7 @@ SECRET_KEY = ')-p6hfky)z@pu((7jqd5sb#_mcp#03o(%dr@st-b*5e8vs*1$q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ina.co.zw"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -118,9 +118,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/test/static/'
+STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "website/static"),
+    "/home/mfztylxf/repositories/INA/website/staticfiles",
 )
